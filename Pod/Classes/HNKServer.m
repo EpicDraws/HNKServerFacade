@@ -74,7 +74,7 @@ static NSString *const kHNKExceptionTextInvalidInitializer = @"-initWithBaseURL:
 
 - (BOOL)isNetworkActivityIndicatorEnabled
 {
-    return [AFNetworkActivityIndicatorManager sharedManager].isEnabled;
+    return NO; //[AFNetworkActivityIndicatorManager sharedManager].isEnabled;
 }
 
 - (NSSet *)responseContentTypes
@@ -129,7 +129,7 @@ static NSString *const kHNKExceptionTextInvalidInitializer = @"-initWithBaseURL:
 
 - (void)setupNetworkActivityIndicator
 {
-    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    // [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
 }
 
 - (NSString *)urlStringFromPath:(NSString *)path
